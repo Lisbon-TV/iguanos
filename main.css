@@ -1,0 +1,42 @@
+body,
+body * {
+    margin: 0;
+    padding: 0;
+    vertical-align: top;
+    box-sizing: border-box;
+    font-size: 20px;
+}
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.bendras {
+    border-style: dotted dashed solid double;
+}
+h1 {
+    background-color: yellow;
+}
+
+h2 {
+    background-color: green;
+}
+
+p {
+    background-color: red;
+}
+
+body {
+    background-color: aquamarine;
+}
+
+#btn {
+    border-style: none;
+    background-color: transparent;
+    display: flex;
+    flex-direction: center;
+    text-align: center;
+    text-decoration: none;
+    font-size: 10rem;
+    margin: 5rem 5rem 10rem 10rem;
+}
