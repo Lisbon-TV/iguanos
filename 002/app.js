@@ -1,7 +1,33 @@
+/* COMMENT: '%c' -> 
+(house, _) -> "_" -> 
+*/
+
+
+// *** \\
+
+/* COMMENT:
+
+See: https://www.educative.io/answers/what-are-falsy-values-and-truthy-in-javascript
+
+Jei pirmas loginis operatorius nusprendzia true arba false, Js toliau nebeziuri!
+
+1 && 1 -> 1;
+1 && 0 -> 0;
+0 && 1 -> 0;
+0 && 0 -> 0;
+
+1 || 1 -> 1;
+1 || 0 -> 1;
+0 || 1 -> 1;
+0 || 0 -> 0;
+
+*/
+
 // let result;
 
 // let digit = 1;
 
+// COMMENT: Visada naudoti lengviau skaitoma koda! cia: pvz. -> if function!
 
 // if (3 > digit) {
 //     result = 'YES';
@@ -9,21 +35,36 @@
 //     result = 'NO';
 // }
 
-// 10 > digit && (result = 'YES') || (result = 'NO');
+// COMMENT: Kadangi react galima irasyti tik viena eilute Js kodo, galima sutikti if
+// aprasyta ir taip: 
+
+// 10 > digit && (result = 'YES') || (result = 'NO');  // jei True and True -> || nebeziuri!, nes vistiek bus true!
+
+// COMMENT: Geresnis variantas react tada naudoti tiernary:
 
 // 2 > digit ? result = 'YES' : result = 'NO';
 
 
-let what = 25;
+// *** \\
 
+// COMMENT: 
+// let result; ->tuscias kintamasis, reiksme - undefined. Gali buti bet kas, string, etc.
+// let result = null; -> bus kazkoks objektas!
+
+// let what = 25; -> cia naudojam default values, kai 0 -> False, o 1 -> True.
+
+let what = 25;
 let result;
 
 
 // result = what || 'NO';
-// result = what ? what : 'NO';
-
+// result = what ? what : 'NO'; geresnis yra tiernary panaudojimas!
 
 // console.log(result);
+
+
+// *** // Naujas pratimas:
+// COMMENT: 
 
 const house = 'Jonas';
 const house2 = ['Jonas', 'Petras', 'Bebras'];
@@ -37,9 +78,48 @@ const house4 = [
     {id: 3, name: 'Bebras', flat: 3}
 ];
 
-house4[1].name = 'Ona';
+console.log(house4[1].name);
+console.log(house4);
+console.log(house4[2]);
 
-// console.log(house4.find(h => h.id === 3));
+// galima i masyva ir irasyti nauja nari, vietoj petro pakeisim Ona!:
+house4[1].name = 'Ona';
+console.log(house4[1]);
+console.log(house4[1].name);
+
+/*COMMENT: Index'u arejuose negalime pasitiketi, because they grouped by default, 
+           but it can be changed later! 
+Todel naudojam unikalu id, tada nesvarbu kokia bus tvarka, galime issitraukti reikiama nari,
+naudodami arrow (=>) funkcija: 
+*/
+
+console.log(house4.find(h => h.id === 3));
+
+
+// FUNKCIJOS uzrasymas:
+
+// Vardine funkcija, - funkcija su pavadinimu papa, i.e., function papa:
+function papa() {
+    console.log('papa');
+}
+
+// Anonimine funkcija, funkcija neturi vardo: 
+// (cia yra kintamasis, kuris saugo funkcija)
+const papa2 = function() {
+    console.log('papa2');
+}
+
+// Arrow funkcija, nes vietoj zodzio funkcija, irasyta (rodykle:) '=>': 
+const papa3 = () => {
+    console.log('papa3');
+}
+
+const papa4 = () => console.log('papa4');
+
+
+console.log(papa());
+
+
 
 
 // function fun(tt) {
