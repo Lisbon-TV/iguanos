@@ -79,13 +79,19 @@ const house4 = [
 ];
 
 console.log(house4[1].name);
+console.log(house4[1].flat);
+
 console.log(house4);
+
 console.log(house4[2]);
+
 
 // galima i masyva ir irasyti nauja nari, vietoj petro pakeisim Ona!:
 house4[1].name = 'Ona';
+console.log(house4[1].name = 'OK');   // ??? atrodo galima ir taip!
 console.log(house4[1]);
 console.log(house4[1].name);
+
 
 /*COMMENT: Index'u arejuose negalime pasitiketi, because they grouped by default, 
            but it can be changed later! 
@@ -94,6 +100,7 @@ naudodami arrow (=>) funkcija:
 */
 
 console.log(house4.find(h => h.id === 3));
+console.log(house4.find(_ => _.id === 3));  // galima cia ir su '_', nes parametras tuscias!
 
 
 // FUNKCIJOS uzrasymas:
@@ -178,7 +185,10 @@ const multiply = (a, b) => a * b;
 
 const divide = (a, b) => a / b;
 
-// COMMENT: vietoj nicePrint(sum(1,2)) galima rasyti => nicePrint(1, 2, sum);
+// COMMENT: 
+// Object turi index ir properties... 
+
+//vietoj nicePrint(sum(1,2)) galima rasyti => nicePrint(1, 2, sum);
 // (sum, 1, 2) -> vieta nesvarbu! 
 
 // nicePrint(1, 2, sum);
@@ -204,10 +214,12 @@ const colorsAnimal = [
     {id: 7, name: 'Wolf', color: 'purple'}
 ];
 
-// for (let i = 0; i < colorsHouse.length; i++) {
-//     const house = colorsHouse[i];
-//     console.log('%c' + house.name, 'background: ' + house.color + '; color: white; padding: 5px; border-radius: 5px;');
-// }
+
+
+for (let i = 0; i < colorsHouse.length; i++) {
+    const house = colorsHouse[i];
+    console.log('%c' + house.name, 'background: ' + house.color + '; color: white; padding: 5px; border-radius: 5px;');
+}
 
 
 const arrayWalker = (array, fun) => {
