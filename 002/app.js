@@ -1,5 +1,5 @@
 /* COMMENT: '%c' -> 
-(house, _) -> "_" -> 
+(house, _) -> "_" -> ka nera kintamojo, vietoj (), rasome _ 
 */
 
 
@@ -110,14 +110,28 @@ const papa2 = function() {
 }
 
 // Arrow funkcija, nes vietoj zodzio funkcija, irasyta (rodykle:) '=>': 
+// Zodelis 'This'
 const papa3 = () => {
-    console.log('papa3');
+    console.log('papa3');  // gali buti ir: return "Papa3";
 }
 
-const papa4 = () => console.log('papa4');
+// 
+const papa4 = () => console.log('papa4'); // cia yra jau su return!
 
 
-console.log(papa());
+const papa5 = (a) => {
+    return 'papa' + a;
+}
+
+const papa6 = b => 'papa' + b;
+
+
+console.log(papa(1));
+console.log(papa2(2));
+console.log(papa3(3));
+console.log(papa4(4));
+console.log(papa5(5));
+console.log(papa6(6));
 
 
 
@@ -163,6 +177,9 @@ const sum = (a, b) => {
 const multiply = (a, b) => a * b;
 
 const divide = (a, b) => a / b;
+
+// COMMENT: vietoj nicePrint(sum(1,2)) galima rasyti => nicePrint(1, 2, sum);
+// (sum, 1, 2) -> vieta nesvarbu! 
 
 // nicePrint(1, 2, sum);
 // nicePrint(1, 2, (a, b) => a / b);
