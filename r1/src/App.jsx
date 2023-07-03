@@ -1,13 +1,15 @@
 import './App.css';
-import Racoon from './components/003/racoon';
+import Animal from './components/004/animal';
+
+// const bu = _ >
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>Hello React!</h1>
-        <Racoon />
-        <Racoon />
+        <h1>Hello Props!</h1>
+        <Animal type="racoon" animalColor="skyblue" />
+        <Animal type="cat" color="crimson" />
       </header>
     </div>
   );
