@@ -1,5 +1,11 @@
-/*
 
+*Set-up* NAUJAI PASKAITAI:
+
+Rename: App.jsx to 003.jsx;
+Create new file: App.jsx;
+Copy and edit: 003.jsx into App.jsx and change what's necessay!
+
+Terminal: cd r1, then: npm start
  
 
 React Developer Tools - Chrome extension:
