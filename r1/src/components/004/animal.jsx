@@ -1,3 +1,5 @@
+// Uzduotis: To create new component 'm':
+
 function Animal({ type, animalColor }) {
 
     // if (type === 'racoon') {

@@ -1,0 +1,244 @@
+REACT
+
+React yra biblioteka. Gime PHP pragramavimo pagrindu,
+kur PHP kodas interchanges with HTML kodu.
+
+In React js code interchanges with HTML code, tam turi:
+ -> .jsx faila!!! Kur:
+        -> js - Java Script;
+        -> x  - .hml failas.
+
+HML FAILAS:
+- grieztas .html failas!
+- visi tagai turi buti uzdaryti, pvz:
+        <br><br/>;
+        <img></img>.
+- 
+
+React puslapis:
+- senas: moke gryna react
+- ir naujas: praso pasirinkti kita framework. 
+
+Js turi 2% react'o, kita dalis -> framework.
+
+CREATING REACT: 
+
+Create React App at: https://legacy.reactjs.org/docs/create-a-new-react-app.html
+
+Komanda terminale:
+
+In vscode susikursim r1 folderi. Todel, vietoj npx create-react-app my-app: ->
+
+npx create-react-app r1 
+(Instaliuosis, kol pasirodys zinute: 'Happy Hacking!')
+
+Tada:
+
+cd my-app
+npm start
+
+Jei atsidarai nauja Git Bash terminale...
+Enter: cd.. (vienu folderiu zemyn) nesuveiks reikia tarpo:
+Enter: cd ..
+
+Jei atsidarai nauja PowerShell terminale...
+(Protingesnis uz Git Bash!)
+
+Enter: cd.. (vienu folderiu zemyn) veikia be tarpo:
+Enter: cd .. (su tarpu irgi veikia!)
+
+Enter: ls (duoda visa sarasa visu failu ir folderiu)
+
+In App.css reacto logo sugreitinimas:
+
+animation: App-logo-spin infinite 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+(vietoj cubic-bezier, galima rinktis linear).
+
+
+
+REACT 3 PAGRINDINES DALYS:
+
+1 Komponentas;
+2 Props;
+3 State. 
+
+INDEX.JS FAILO KOREKCIJOS:
+
+<React.StrictMode>
+    <App />
+</React.StrictMode>
+
+<React.StrictMode>:
+    -> koda patikrina, ar yra strict (pirma karta);
+    -> kita karta padaro (antra karta);
+    -> in console pasileidzia du kartus.
+
+TODEL: Nenaudojam <React.StrictMode> mokymosi tikslais!
+
+TADA: 
+esant index.js faile:
+        ->  apatineje juostoje click 'JavaScript.JSX';
+        ->  atsiradusiame search field, find & click: JavaScript JSX (JavascriptReact);
+        ->  delete: <React.StrictMode> ir </React.StrictMode>.
+
+
+APP.JS FAILO KOREKCIJOS:
+
+Rename App.js to: App.jsx!
+
+App.js faile paliekame, tik:
+
+import './App.css';
+
+***
+function App() {
+  return (
+    <div className="App">
+      <header className="App-header">
+        
+      </header>
+    </div>
+  );
+}
+
+export default App;
+***
+
+REACT KOMPONENTAS:
+
+-> Funkcija, kuri grazino HTML porcija/gabala!
+
+//FUNKCIJA://
+function App() {
+
+//KOMPONENTAS//
+  return (
+    <div className="App">
+      <header className="App-header">
+        <>Funkcija</> 
+
+      </header>
+    </div>
+  );
+}
+
+Komponenta iskvieciame per Funkcija, 
+kuria ikeliame i HTML tagus!
+O pati Funkcija butinai turi prasideti DIDZIAJA RAIDE!
+
+Komponenta galime prideti tiesiogiai su HTML tag'u, 
+PVZ:
+
+***
+function App() {
+  return (
+    <div className="App">
+      <header className="App-header">
+        <h1>KOMPONENTAS PRIDETAS SU HTML TAGU!</h1>
+      </header>
+    </div>
+  );
+}
+
+export default App;
+***
+
+KADANGI KOMPONENTU BUS DAUG:
+
+- Create Folder: 'Components';
+- In 'Components' folder, create: NewFile.jsx.,
+    PVZ: 'Racoon.jsx'.
+
+In the NewFile.jsx arba Racoon.jsx:
+
+cia: return (), skliausteliai reikalingi, 
+kad nepsimestu komponentas, kai po return rasoma is naujos eilutes!
+
+***
+function Racoon() {
+
+    return (
+        <h1>Naujas Komponentas</h1>
+    );  
+}
+
+***
+
+cia po return skliausteliu nereika:
+
+***
+function Racoon() {
+
+    return <h1>Naujas Komponentas</h1> 
+}
+
+***
+
+Pabaigoje, exkportuojame funkcija pav. 'Racoon' 
+(is didziosios raides): 
+
+export default Racoon;
+
+
+IN APP.JSX FILE:
+
+***
+import './App.css';
+
+Tage </> pridedame komponenta, irasydami funkcijos pavadinima su didziaja raide,
+PVZ: '<Racoon />.
+
+function App() {
+  return (
+    <div className="App">
+      <header className="App-header">
+        <h1>Hello React!</h1>
+        <Racoon />
+        <Racoon />
+      </header>
+    </div>
+  );
+}
+
+export default App;
+***
+
+Pradedami rasyti <Ra... />, virsuje automatiskai issoks import eilute:
+"import Racoon from './components/003/Racoon'.", kuria galime prideti ir manually!
+
+***
+import './App.css';
+import Racoon from './components/003/Racoon'.
+
+Tage </> pridedame komponenta, irasydami funkcijos pavadinima su didziaja raide,
+PVZ: '<Racoon />.
+
+function App() {
+  return (
+    <div className="App">
+      <header className="App-header">
+        <h1>Hello React!</h1>
+        <Racoon />
+        <Racoon />
+      </header>
+    </div>
+  );
+}
+
+export default App;
+***
+
+class VS className:
+
+    ->  In JS: 'class';
+    ->  In React: 'className'.
+
+
+TAISYKLE: 
+
+TAG: <> .. </>  
+
+    
+    -> tuscias tag'as.
+React funkcija gali return tik viena teva, jei nori return du brolius iterpiam tarp:
+<div></div> arba <></>!!     

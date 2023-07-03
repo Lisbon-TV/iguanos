@@ -5,7 +5,47 @@ Rename: App.jsx to 003.jsx;
 Create new file: App.jsx;
 Copy and edit: 003.jsx into App.jsx and change what's necessay!
 
-Terminal: cd r1, then: npm start
+Terminal: 
+
+cd r1, then: npm start
+npm i sass
+
+
+PRIDETI KOMPONENTA:
+
+App.jsx FAILO SABLONAS:
+
+import './App.css';
+import Funkcija from './components/Folderis/JsxFailas';
+
+
+function App() {
+  return (
+    <div className="App">
+      <header className="App-header">
+        <>Funkcija</> 
+
+      </header>
+    </div>
+  );
+}
+
+export default App;
+
+***
+
+JsxFailas.jsx FAILO SABLONAS:
+
+function Funkcija() {
+
+    return (
+    <div>
+        <h1 >Mano komponentas!</h1>
+    </div>
+    )
+}
+
+export default Funkcija;
  
 
 React Developer Tools - Chrome extension:
@@ -76,7 +116,7 @@ Paleisti sass failus terminale:
 REACT:
 
 <> .. </>       --> tuscias tag'as.
-React funcija gali return tik viena teva, jei nori return du brolius iterpiam tarp:
+React funkcija gali return tik viena teva, jei nori return du brolius iterpiam tarp:
 <div></div> arba <></>!!
 
 
