@@ -34,7 +34,7 @@ f = { ...e, name: 'Simas' }; // copy by value plus change name
 
 e.color = 'red';
 
-
+// COMMENT: react visada naudojam const! Let galima naudoti funkcijoje.
 
 // console.log('e:', e, 'f:', f);
 
@@ -75,19 +75,29 @@ const ownRacoon = house.filter(m => m.animal === 'racoon');
 
 const getSimas = house.find(m => m.name === 'Simas');
 
+// Istrinti elementa is masyvo, lengviau naudoti .filter metoda: 
+
 const killJonas = house.filter(m => m.name !== 'Jonas');
 
+
+// .sort metodas - grazina reiksmes by reference, 
+// Jei object yra in react state, tada array/object reikia pries tai nusikopijuoti!
+// Tam daudojame spead [...a]
 //sort by price
 
 const sortHouse = [...house].sort((a, b) => a.price - b.price);
 
+console.log(house, sortHouse);
+
 // sort by name
 const sortByName = [...house].sort((a, b) => a.name.localeCompare(b.name));
 
+console.log(sortByName);
+
 // get all racoon owner and sort by name
+// kadangi .sort yra gale, jis jau veikia ant kopijos!
 
 const allRacoons = house.filter(m => m.animal === 'racoon').sort((a, b) => a.name.localeCompare(b.name));
-
 
 console.log(allRacoons, house);
    
