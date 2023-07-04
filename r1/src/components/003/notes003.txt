@@ -58,8 +58,8 @@ animation: App-logo-spin infinite 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
 
 REACT 3 PAGRINDINES DALYS:
 
-1 Komponentas;
-2 Props;
+1 Komponentas -funkcija, kuri grazina HTML porcija/gabala!;
+2 Props - funkcijos argumentas/ai;
 3 State. 
 
 INDEX.JS FAILO KOREKCIJOS:
@@ -106,7 +106,7 @@ export default App;
 
 REACT KOMPONENTAS:
 
--> Funkcija, kuri grazino HTML porcija/gabala!
+-> Funkcija, kuri grazina HTML porcija/gabala!
 
 //FUNKCIJA://
 function App() {

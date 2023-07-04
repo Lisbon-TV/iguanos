@@ -1,4 +1,3 @@
-
 *Set-up* NAUJAI PASKAITAI:
 
 Rename: App.jsx to 003.jsx;
@@ -7,23 +6,29 @@ Copy and edit: 003.jsx into App.jsx and change what's necessay!
 
 Terminal: 
 
-cd r1, then: npm start
-npm i sass
+Paleisti: React:
+  ->  cd r1
+  ->  npm start
+
+Paleisti/download: .scsss:
+  ->  npm i sass
 
 
 PRIDETI KOMPONENTA:
 
 App.jsx FAILO SABLONAS:
 
+***
 import './App.css';
 import Funkcija from './components/Folderis/JsxFailas';
+
 
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <>Funkcija</> 
+        < Funkcija/>
 
       </header>
     </div>
@@ -31,11 +36,11 @@ function App() {
 }
 
 export default App;
-
 ***
 
 JsxFailas.jsx FAILO SABLONAS:
 
+***
 function Funkcija() {
 
     return (
@@ -113,11 +118,58 @@ Paleisti sass failus terminale:
 &:before
 
 
-REACT:
 
-<> .. </>       --> tuscias tag'as.
-React funkcija gali return tik viena teva, jei nori return du brolius iterpiam tarp:
-<div></div> arba <></>!!
+
+PRIDETI PROPS:
+
+Props - funkcijos argumentas/ai;
+
+... galima issaukti:
+-> < Funkcija type='Racoon' />
+-> < Funkcija type='Cat' />
+->...
+
+
+
+JsxFailas.jsx FAILO SABLONAS:
+
+- cia: instaaliuotas props onject -> function Funkcija(props) { etc. } ...
+Norint pasiimti animal type, reikia destrukturizuoti su {} ()-liuose, PVZ: ({})! 
+
+***
+function Funkcija({ type }) {
+
+    return (
+    <div>Funkcija</div>
+    )
+}
+
+export default Funkcija;
+***
+
+
+App.jsx FAILO SABLONAS:
+
+***
+import './App.css';
+import Funkcija from './components/Folderis/Funkcija';
+
+
+function App() {
+  return (
+    <div className="App">
+      <header className="App-header">
+        < Funkcija type="Racoon"/>
+        < Funkcija type="Cat"/>
+
+      </header>
+    </div>
+  );
+}
+
+export default App;
+***
+
 
 
 

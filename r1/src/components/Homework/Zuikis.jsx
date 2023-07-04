@@ -2,7 +2,7 @@ function Komponentai() {
 
     return (
     <div>
-        <h1 >Labas, Zuiki!</h1>
+        <h1 style={{color: 'pink'}}>Labas, Zuiki!</h1>
     </div>
     )
 }
