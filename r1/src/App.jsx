@@ -1,5 +1,6 @@
 import './App.css';
-import Komponentai from './components/Homework/Zuikis';
+// import Komponentai from './components/Homework/Zuikis';
+import Tekstas from './components/Homework/Zuikis';
 
 function App() {
   return (
@@ -7,8 +8,9 @@ function App() {
       <header className="App-header">
         <div>
             <h1>REACT BASE</h1>
-        </div>
-        <Komponentai/>
+            {/* <Zuikis style={{color: 'pink'}} /> */}
+            <Tekstas type="text"/>
+        </div>      
 
       </header>
     </div>

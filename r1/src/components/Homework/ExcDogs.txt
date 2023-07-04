@@ -1,5 +1,6 @@
-REACT BASE LIST:
+https://docs.google.com/document/d/1sMMk_ROxJsXIR3ZFuaPEu0OvrwztyYCjkz13ELKUaPs/edit
 
+REACT BASE LIST:
 
 const dogs = ['šuo', 'šunius', 'Bobikas', 'kudlius', 'Šarikas', 'avigalvis'];
 

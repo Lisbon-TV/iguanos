@@ -1,5 +1,6 @@
 REACT BASE
 
+https://docs.google.com/document/d/1omOws0Y6jkbuaXKI7-lGvcG6R7FanuZPbmch3wCYr4A/edit
 
 Sukurti komponentą, kuris užrašytų “LABAS, ZUIKI!”. Raidžių spalva pink. 
 Spalva tekstui nurodoma komponento viduje naudojant style.
