@@ -1,5 +1,5 @@
 import './App.scss';
-import Dogs4 from './components/005/Dogs4';
+import Dogs4 from './Components/005/Dogs4';
 
 function App() {
   return (
