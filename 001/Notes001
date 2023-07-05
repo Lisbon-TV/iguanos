@@ -1,0 +1,71 @@
+GitHub grupes "Iguoanos" nuoroda: 
+https://github.com/A-Kija/iguanos;
+
+Atsiskaitymu nuodroda: 
+https://drive.google.com/drive/folders/1iBBL___NuWpRjS9BW0RoRvb-3YbIrzAK;
+
+Uzdaviniu nuoroda: 
+https://drive.google.com/drive/folders/14cuilRyhvfXKAvomKjy3momqPiEanW_B;
+
+React uzdaviniu nuoroda:
+https://drive.google.com/drive/folders/1LayTfQE3KZOOi4-E_qDmFNboyjkb_ZEA
+
+Appache nuoroda:
+https://www.apachefriends.org/
+
+STARTING REACT:
+
+GitHub:
+    - create new repository;
+    - create new name for Repository name;
+
+vscode:
+    1:
+    - create new file: readme.txt;
+    - enter any message, 
+    PVZ: Hello, world!.
+    2:
+    - create HTML: index.html;
+    - download plugin: Live Server;
+    - right click  index.html and select: Open with Live Server;
+    (Note!!: Jei naudojame method kitoki, nei git, tada Live Server neveiks,
+    bet Dead Server - veiks!)
+    - crteate: app.js;
+    - in app.js, enter: console.log('Hello, world!');
+    - in index.html above <title></title>, enter: <script src='app.js' defer></script>. 
+
+
+
+Terminal:
+    -   git init
+    -   git add README.md
+    -   git commit -m "first commit" .. arba yrašome commit message ir commit'iname.
+        (Do not publish yet!)
+    -   git branch -M main  (Pasikeiciam pav. from 'master' to 'main')
+    -   git remote add origin https://github.com/Lisbon-TV/homework.git
+    -   git push -u origin main
+    -   refresh GitHub.
+
+
+Front-End: Js programavimo kalba sudaro ~50%, jai veikti reikalingos viena is dvieju erdviu:
+        -> narsykle;
+        -> gitnode;
+        -> console. (NOTE!!: consoleje programuoti negalima!)
+
+Back-End:  Js sudaro tik ~2%! PHP sudaro ~50%.
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
