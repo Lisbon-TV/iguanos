@@ -1,6 +1,7 @@
 import './App.css';
-// import Komponentai from './components/Homework/Zuikis';
+import Komponentai from './components/Homework/Zuikis';
 import Tekstas from './components/Homework/Zuikis';
+import Zebras from './components/Homework/Zuikis';
 
 function App() {
   return (
@@ -9,7 +10,8 @@ function App() {
         <div>
             <h1>REACT BASE</h1>
             {/* <Zuikis style={{color: 'pink'}} /> */}
-            <Tekstas type="text"/>
+            {/* <Tekstas type="text"/> */}
+            <Zebras type="color"/>
         </div>      
 
       </header>
