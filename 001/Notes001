@@ -55,6 +55,153 @@ Front-End: Js programavimo kalba sudaro ~50%, jai veikti reikalingos viena is dv
 Back-End:  Js sudaro tik ~2%! PHP sudaro ~50%.
 
 
+JS KINTAMUJU DEKLARAVIMAS:
+
+Kintamieji turi dvi savybes:
+ -> reiksme;
+ -> tipas.
+
+Nevartotinas:
+
+var h = 30; 
+
+Vartotini (i.e., riboto matomumo kintamieji: let ir const):
+
+let a = 10;
+const b = 20;
+
+
+AUTOMATINES KINTAMUJU TIPU KONVERTACIJOS:
+
+let a = 10;
+console.log(type of a, a); -> Result: number, 10.
+
+a = a + 1; 
+console.log(type of a, a); -> Result: number, 11.
+
+a = a + ''; -> Sustringinimas
+console.log(type of a, a); -> Result: string, 10.
+
+a = a + 10; -> Sustringinimas jau ivyko pries tai, todel:
+console.log(type of a, a); -> Result: string, 1010.
+
+***
+
+let b = true;
+console.log(type of b, b); -> Result: boolean, true.
+
+b = b + ''; -> Sustringinimas
+console.log(type of b, b); -> Result: string, true.
+
+b = b + 10; -> Sustringinimas jau ivyko pries tai, todel:
+console.log(type of b, b); -> Result: string, 10.
+
+***
+
+let c = true;
+console.log(type of c, c); -> Result: boolean, true.
+
+c = c + 10; -> Boolean reiksme true = 1; false = 0;
+console.log(type of c, c); -> Result: number, 11.
+
+
+JS FALSY VALUES: 
+    -> values that resolve to the Boolean false.
+https://www.educative.io/answers/what-are-falsy-values-and-truthy-in-javascript
+
+In JavaScript, we have 6 falsy values:
+        - false;
+        - 0 (zero);
+        - ‘’ or “” (empty string);
+        - null;
+        - undefined;
+        - NaN.
+
+
+
+***
+
+let result;
+let digit = 5;
+
+
+if (10 > digit) {
+    result = 'YES';
+} else {
+    result = 'NO';
+}
+console.log(result); -> Result: YES.
+
+
+Salygos uzrasymas:
+
+3 > digit && (result = 'YES') || (result = 'NO');
+console.log(result); -> NO.
+
+
+3 > digit && (result = 'YES');
+(In Js 3 > 10 => false, toliaub Js nebeziuri, todel nebepriskirenoja sekancio resultato!)
+console.log(result); -> Result: undefined. 
+
+***
+
+if (10) {
+    console.log('YES');  
+    } else {
+    console.log('NO');
+}
+
+-> Result: YES. (number => true!)
+
+***
+
+if (0) {
+    console.log('YES');  
+    } else {
+    console.log('NO');
+}
+
+-> Result: NO. (0 => false!)
+
+***
+
+let k = 1;
+
+if (k--) {
+    console.log('YES');  
+    } else {
+    console.log('NO');
+}
+-> Result: YES. (pirma if istato k => 1, -- operacijos nenaudojame, nes tikriname tik if ...)
+
+***
+
+let m = 1;
+
+if (--m) {
+    console.log('YES');  
+    } else {
+    console.log('NO');
+}
+-> Result: NO. (pirma if istato m => 1, tada: (cia --) -1  ir 1 => 0 => false!)
+
+***
+
+let g = 1;
+
+if (g-- && g) {
+    console.log('YES');  
+    } else {
+    console.log('NO');
+}
+-> Result: NO. (kai yra sekanti operacija, cia: && operacija, suveikia -- operacija, todel: g => 1, tada, 1 - 1 (naudojam --, nes yra &&)  => 0; 0 => false; false & ((g=1) => true) = false!)
+
+***
+
+
+
+
+
     
 
 

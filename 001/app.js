@@ -27,7 +27,6 @@ console.log('Hello, world');
 
 
 let result;
-
 let digit = 5;
 
 
