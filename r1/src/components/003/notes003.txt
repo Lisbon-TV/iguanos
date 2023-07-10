@@ -1,4 +1,4 @@
-REACT
+REACT:
 
 React yra biblioteka. Gime PHP pragramavimo pagrindu,
 kur PHP kodas interchanges with HTML kodu.
@@ -241,4 +241,4 @@ TAG: <> .. </>
     
     -> tuscias tag'as.
 React funkcija gali return tik viena teva, jei nori return du brolius iterpiam tarp:
-<div></div> arba <></>!!     
+<div></div> arba po <div> tago naudojam -> <></> taga/-us!!     

@@ -2,7 +2,7 @@
 
 Rename: App.jsx to 003.jsx;
 Create new file: App.jsx;
-Copy and edit: 003.jsx into App.jsx and change what's necessay!
+Copy and edit: 003.jsx into App.jsx and change/transport what's necessay!
 
 Terminal: 
 
@@ -170,8 +170,3 @@ function App() {
 export default App;
 ***
 
-
-
-
-
-*/

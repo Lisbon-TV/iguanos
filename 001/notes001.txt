@@ -194,7 +194,7 @@ if (g-- && g) {
     } else {
     console.log('NO');
 }
--> Result: NO. (kai yra sekanti operacija, cia: && operacija, suveikia -- operacija, todel: g => 1, tada, 1 - 1 (naudojam --, nes yra &&)  => 0; 0 => false; false & ((g=1) => true) = false!)
+-> Result: NO. (kai yra sekanti operacija, cia: && operacija, tik tada: suveikia -- operacija (ne if'as), todel: g => 1, tada, 1 - 1 (naudojam --, nes yra &&)  => 0; 0 => false; false & ((g=1) => true) = false!)
 
 ***
 
