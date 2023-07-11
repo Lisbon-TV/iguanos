@@ -1,31 +1,46 @@
-import { useState } from 'react';
-import './App.scss';
-import Checkbox from './Components/006/Checkbox';
-import Fancy from './Components/006/Fancy';
-import Input from './Components/006/Input';
-import Input2 from './Components/006/Input2';
-import Radio from './Components/006/Radio';
-import Select from './Components/006/Select';
-import './buttons.scss';
-
+import {useState} from 'react';
+import "./buttons.scss";
+import "./App.scss";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
 
-    const [showRadio, setShowRadio] = useState(true);
+  const [text, setText] = useState('');
+  const [range, setRange] = useState('14');
+
+  const handleChange = e => {
+      setText(e.target.value);
+  }
+
+  const handleChangeRange = e => {
+    setRange(e.target.value);
+}
 
   return (
-    <div className="App">
-      <header className="App-header">
-        <button className="red" onClick={_ => setShowRadio(!showRadio)}>Toggle Radio</button>
-        {
-            showRadio && <Radio />
-        }
-        <Checkbox />
-        <Select />
-        <Fancy />
-        <Input2 />
-        <Input />
-      </header>
+    <div className="container">
+      <div className="row">
+        <div className="col-4">
+          <div className="card mt-4">
+            <h1 className="card-header">New Person</h1>
+            <div className="card-body">
+              <fieldset>
+                <legend>Social Network Lover</legend>
+                <div className='mt-3'>
+                  <input type="text" value={text} onChange={handleChange} />
+                </div>
+                <div className='mt-3'>
+                  <label>{range.padStart(2, "0")}</label>
+                  <input type="range" min="14"  max="99" value={range} onChange={handleChangeRange}/>
+                </div >
+                <button className="red" onClick={(_) => setText("Hello!")}>
+                  Add
+                </button>
+              </fieldset>
+            </div>
+          </div>
+        </div>
+        <div className="col-8">Column</div>
+      </div>
     </div>
   );
 }

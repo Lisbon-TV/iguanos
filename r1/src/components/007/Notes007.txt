@@ -1,0 +1,101 @@
+CRUD:
+  -> Create;
+  -> Read;
+  -> Update;
+  -> Delete.
+
+PVZ, Prekiu krepselis. 
+
+
+Bootstrap library:
+nenaudojama praktikoje, dazinau mokylineje aplinkoje.
+
+https://getbootstrap.com/docs/5.0/components/card/
+
+Dabar more in trend: 
+
+https://tailwindcss.com/
+
+
+Bootstrap terminal commands:
+    - npm i Bootstrap
+    
+
+In App.jsx: 
+
+    - import '.bootstrap/dist/css/bootstrap.min.css';
+    - paste collumn code from Bootstrap;
+    - chahnge class to className.
+    - remove:   <div className="App"> 
+                <header className="App-header">
+                </header>
+    - format doc.
+
+    - change className='col -> to 'col-4'  & 'col-8';
+    - add collumn card 'Special title treatment' from Bootstrap: Components/card 
+        -> to <className='card'>;
+    - change: Featured to New Person;
+    - remove: 
+                  <p className="card-text">
+                With supporting text below as a natural lead-in to additional
+                content.
+              </p>
+              <a href="#" className="btn btn-primary">
+                Go somewhere
+              </a>
+    - change: Special title treatment to Add new social network;
+    - to  <div className="card (add->) mt-4">;
+    - change: <div className="card-header">New Person</div>: <div> </div> to -> <h1> </h1>;
+
+    - copy paste: from 006/Input.jsx under (<h5 className="card-title">Add New Social Network</h5>):
+        <fieldset>
+            <legend>One input text</legend>
+                <div>Input: {text}</div>
+            <div>Left: {10 - text.length}</div>
+            <div>
+            <input type="text" value={text} onChange={handleChange} />
+            </div>
+            <button className='red small' onClick={_ => setText('Hello!')}>Labas!</button>
+            <button className='red small' onClick={_ => setText('Bye!')}>Viso!</button>
+        </fieldset>
+    - remove: 
+            <button className="red small" onClick={(_) => setText("Bye!")}>Viso!</button>
+            <div>Input: {text}</div>
+            <div>Left: {10 - text.length}</div>
+            'small' from  <button className="red small"
+
+    - change btn from >Labas!< to >Add<
+    
+    - copy paste from 006/Input.jsx to App.jsx under (function App() ) :
+            const [text, setText] = useState('');
+            const handleChange = e => {
+            if (e.target.value.length > 10) {
+            return;
+            }
+            setText(e.target.value);
+            }
+    - remove: 
+          if (e.target.value.length > 10) {
+          return;
+      }
+    - add at the top of App.jsx: import {useState} from 'react';
+    - change <legend>One input text</legend> to <legend>Person Name</legend>;
+
+FROM FANCY.jsx:
+    - copy paste under (<div><input type="text" value={text} onChange={handleChange} /></div):
+    - copy paste: const [range, setRange] = useState('0') under the other useState;
+    - copy paste: 
+                const handleChangeRange = e => {
+                setRange(e.target.value);
+                }
+    - change 0 -> 14;
+    - remove: <h5 className="card-title"></h5>
+    - correction: Person Name replace with: Add New Social Network
+
+
+
+On Bootstrap web:
+    - layout;
+    - grid;
+    - (copy first collumn code).
+

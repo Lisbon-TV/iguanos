@@ -2,14 +2,14 @@ import { useState } from 'react';
 
 // function Input() {
 
-//     const [text, setText] = useState('');
+    // const [text, setText] = useState('');
 
-//     const handleChange = e => {
-//         if (e.target.value.length > 10) {
-//             return;
-//         }
-//         setText(e.target.value);
-//     }
+    // const handleChange = e => {
+    //     if (e.target.value.length > 10) {
+    //         return;
+    //     }
+    //     setText(e.target.value);
+    // }
 
 //     return (
 //         <fieldset>
