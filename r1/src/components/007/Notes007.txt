@@ -99,3 +99,91 @@ On Bootstrap web:
     - grid;
     - (copy first collumn code).
 
+
+
+    ....
+
+    Js local storage: 
+    https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage
+
+Narsykles dalykas, JavaScript gali prie local storage prieiti per:
+
+Application / local storage ...
+
+
+Jsn -> Js objekto stingine moduliacija, labiausiai paplites (formatas)
+    -> t.y. taisykliu rinkinys, kaip paversti bet koki objekta/masyva i stringa
+    -> pavertus i stringa, mes paskiau galime pasiversti atgal i objekta 
+     (tada naudojam parse metoda)
+
+HTTP -> hypertext transferr protocol
+Narsykle viskas siunciama stringu/textu
+
+Naudojam metoda:  JSON.stringify();
+   PVZ., localStorage.setItem("persons", JSON.stringify([person])):
+
+  const handleCreate = _ => {
+    console.log('Create');
+    const person = {
+      name,
+      age: parseInt(age), 
+      sn
+    }
+    localStorage.setItem("persons", JSON.stringify(person));
+    console.log(person);
+  }
+
+Create localStorage.js faila funkcijose.
+
+
+`
+Visruje irasome: 
+    - import { v4 as uuidv4 } from 'uuid';
+    - kuri randame: web: npmjs.com/package/uuid
+    
+TERMINAL: 
+    - npm install uuid
+
+
+To Note: Buttons.css updated: added min-width: 80px & margin: 0;
+
+    &.small {
+        padding: .5rem 1rem;
+        font-size: .8rem;
+        min-width: 80px;
+        .no {
+            margin: 0px;
+        }
+
+    }
+
+In Delete.jsx 
+    -> ln14 added: modal show. 
+    -> ln14 added: modal-dialog-centered
+
+
+Also, in App.scss: added:
+
+.modal.show {
+  display: block;
+  background-color: #17010845;
+}
+
+Nes (Delete) Modale yra uzdetas nustatymuose display: none!
+
+Remove: 
+  fieldset {
+    // border: 2px dashed skyblue;
+    // margin-top: 30px;
+  ...}
+
+
+Here:     age: +age, -> paverstas i skaiciu!
+
+55min video: pavyzdis is serverio ....
+
+
+
+
+
+

@@ -1,0 +1,53 @@
+Js veikia: 
+    - Narsykle arba Node
+    - or: PHP Interpretatorius
+
+Narsykle ir Interpretatorius nesusikalba, reikia serverio, mes naudosim Apache serveri!
+
+XAMPP -> (tinka musu kompiuteriams, antraip reikia galingesnio!)
+    - turi Apache serveri;
+    - duomenu baze;
+    - PHP Interpretatoriu.
+
+    Apache serveris vienam porte, o dead ir live servers - kituose, gali pestis!
+
+PORTS
+
+localhost: - paleidzia narsykeleje Index of / .....
+
+protokolas: pati pradzia, narsykle veikia su:
+    ->  http or: https - grieztos bedravimo taisykles tarp serverio ir narsykles!
+
+Skaiciai ir domeno vardas... IP adresas (skaiciai) = duomenu vardas
+    -> narsykle domeno varda isvercia i skaicius  (check definition in DNS server google). 
+        PVZ.,    cloudfare.com
+
+    -> domenai suskirtyti i domeno lygius:
+        Pirmo lygio domeno vardas:  http .... .lt : isduotas valstybem, t.t.
+        Antro lygio domeno vardas:  delfi ... : be tasko surasyti skaiciais ir raidem per viduri
+        Trecio lygio: htttp .. GAIDYS... delfi .lt 
+        www -> panaikino, jis veikia kaip antro ir trecio lygio adresai
+
+    -> protokolas rasosi pabaigoje, pvz. ..  (.lt):3000 , kuris rasosi visada. 
+       3000 rodo skirtingu isejimu ir ijejumu.
+
+    -> defaultiniai porto adresai: 
+        http ->  80;
+        https -> 443;
+        jei nera http/s -> 80.
+
+
+PasileisitL XAMPP / Apache / Start
+
+Pasitikrinti: http/localhost
+
+Visi failai turi buti: C:\xampp\htdocs!
+
+ in search : env -> edit system 
+ environment variables
+ 
+
+
+    
+
+
