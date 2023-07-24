@@ -1,0 +1,13 @@
+Online URL encoder:
+https://www.urlencoder.org/
+-> spec reiksmes url eilute koduojamas koduote sukonstruoti url.
+
+URL ENCODE & DECODE DOCUMENTATION:
+https://www.php.net/manual/en/function.urlencode.php
+-> niekada nebus eilute # kartu su spalva, nes turi kita paskirti!
+
+Viskas po # matoma tik narsykleje ir serveri ta info nenueina!
+
+In Js galima apeiti:
+https://stackoverflow.com/questions/298503/how-can-you-check-for-a-hash-in-a-url-using-javascript
+
