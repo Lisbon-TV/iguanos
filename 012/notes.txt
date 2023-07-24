@@ -1,0 +1,6 @@
+Magic Constants:
+https://www.php.net/manual/en/language.constants.magic.php
+
+Masyvai daugiamaciai:
+https://docs.google.com/document/d/1mGBKRTIV8-xlwpuWL9cFO4sF41Up9tw5Ijx24aYVgXk/edit?usp=sharing
+

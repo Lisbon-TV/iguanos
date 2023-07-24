@@ -1,0 +1,18 @@
+Masyvai:
+https://docs.google.com/document/d/1tOSDliDnGNdddq-YCEEYQkUZC0-ZE9zN7PzztUpggA4/edit?usp=sharing
+
+HTML pre-tag
+https://www.w3schools.com/tags/tag_pre.asp
+
+Array Functions:
+https://www.php.net/manual/en/ref.array.php
+
+Ciklai 3:
+https://docs.google.com/document/d/1Kl_cIZr-aO1OfyVLyJ-eJmyyfc-JeP6egKUd4ZLmDms/edit
+
+usort:
+https://www.php.net/manual/en/function.usort.php
+
+Masyvai:
+https://docs.google.com/document/d/1itoAWI02qAu4HKw-3jRx8HApfjb1EdkdTZfTGgvibb4/edit?usp=sharing
+

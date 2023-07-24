@@ -1,0 +1,11 @@
+Funkcijos:
+https://docs.google.com/document/d/1nKAij9iO8dDp3A_lIik6SDZ6vDXZQ-4gaJzP38ob8Pc/edit?usp=sharing
+
+Reflextion:
+https://www.php.net/manual/en/book.reflection.php
+
+Recursive functions:
+https://www.geeksforgeeks.org/recursive-functions/
+
+
+

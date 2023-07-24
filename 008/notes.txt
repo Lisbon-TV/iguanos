@@ -1,0 +1,4 @@
+Terminal:
+    -  php -v
+
+In Widows search: type env / environment varialbles / Edit / New / c:\xampp\php

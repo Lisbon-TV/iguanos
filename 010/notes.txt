@@ -1,0 +1,27 @@
+String Functions:
+https://www.php.net/manual/en/ref.strings.php
+
+
+Multibyte String Functions:
+https://www.php.net/manual/en/ref.mbstring.php
+
+Regular expresions: 
+https://regex101.com/
+
+
+SHEETS: 
+
+Stringai:
+https://docs.google.com/document/d/1LymFY2PpuczHIVk7vy0aJqlk7c_pfUV-GbCl6T-FBKc/edit
+
+Ciklai: 
+https://docs.google.com/document/d/10N_OLZ40pAxQj8tZkO_Rc5B_EtAP2p2TXMVv5HBCrsQ/edit
+
+Ciklai 1:
+https://docs.google.com/document/d/1i2Qpk1msVgaCFZr9KXKqgRxwcNGem9tSJyDSyEflbvY/edit
+
+Ciklai 2:
+https://docs.google.com/document/d/14fe1YD6xGCE_tu3jNRzwU1tAIrMWOLVfZ1aYUenEZtk/edit
+
+Ciklu valdymas:
+https://docs.google.com/document/d/1IF3y_mWtf4LG9Qv8z4AiJr8eQ5cRBON-yDHZ5xhdvzU/edit
