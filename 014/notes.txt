@@ -1,12 +1,205 @@
-Google TeaPot:
+THEORY: 
+
+View on websearch:
+    - instpect,/network/ Headers or Response 
+
+Mes naudosim keturis Request metodus, pradzioje, tik du: 
+    -> Get - impti is serversio;
+    -> Post - perduoti serveriui;
+
+HTML visada turi get metoda, iskyrus forma, gali buti naudojamas post method, 
+issiusti duomenis i serveri, PVZ. -> user name & password!
+
+a hreft -> jau turi get metoda ihardcodinta!
+
+
+HTTP RESPONSE STATUS CODES:
+
+Vienam response priskiriamas vienas status code!
+
+https://developer.mozilla.org/en-US/docs/Web/HTTP/Status
+
+
+HTTP response status codes indicate whether a specific HTTP request has been successfully completed. Responses are grouped in five classes:
+
+Informational responses (100 – 199)
+Successful responses (200 – 299)
+Redirection messages (300 – 399)
+Client error responses (400 – 499)
+Server error responses (500 – 599) 
+
+100s --> Information responses:
+Nematysim, nes nedarysim, tai papildoma info, kuri yra siuntinejama, 
+PVZ., kaip live arba dead serveris pasiima faila per centrinius kanalus (per sockets)
+ir informuoja narsykle, kad reikia pasirefreshinti! 
+
+
+200s --> Successful responses:
+
+The request succeeded. The result meaning of "success" depends on the HTTP method:
+
+GET: The resource has been fetched and transmitted in the message body.
+HEAD: The representation headers are included in the response without any message body.
+PUT or POST: The resource describing the result of the action is transmitted in the message body.
+TRACE: The message body contains the request message as received by the server.
+
+201 Created - viskas gerai su serveriu
+
+202 Accepted - viskas gerai ir dar patikrina ar norima info yra serveryje
+
+
+
+300s --> Redirection messages:
+nusiuncia duomenis (nusiuntimas snereikalauja serverio atlikti veiksmo
+cia veiksmas: narsykles nukreipimas kitu adresu)
+
+301 Moved Permanently  - nieko pas mus nera, suzsidarem, eik lauk, nieko nebus..
+The URL of the requested resource has been changed permanently. 
+The new URL is given in the response.
+
+307 Temporary Redirect -> siuo metu remontas, dabar eik ten... 
+The server sends this response to direct the client to get the requested resource 
+at another URI with the same method that was used in the prior request. 
+This has the same semantics as the 302 Found HTTP response code, with the exception 
+that the user agent must not change the HTTP method used: if a POST was used 
+in the first request, a POST must be used in the second request.
+
+
+400s --> Client error responses:
+
+Serveris atsako, kad yra Narsykles klaida!
+
+400 Bad Request -> tokio paklausimo serveryje atitikmenu nera!
+The server cannot or will not process the request due to something that is perceived to be
+a client error (e.g., malformed request syntax, invalid request message framing, 
+or deceptive request routing).
+
+401 Unauthorized -> bando pasiekti, pvz., neprisilogines!
+Although the HTTP standard specifies "unauthorized", semantically this response means 
+"unauthenticated". That is, the client must authenticate itself to get the requested response.
+
+402 Payment Required Experimental -> turi susimoketi, kad perziuretu!
+This response code is reserved for future use. The initial aim for creating this code 
+was using it for digital payment systems, however this status code is used very rarely 
+and no standard convention exists.
+
+403 Forbidden -> galima uzdrausti perziureti faila, narsykle lenda ten, kur nereikia!
+The client does not have access rights to the content; that is, it is unauthorized, 
+so the server is refusing to give the requested resource. 
+Unlike 401 Unauthorized, the client's identity is known to the server.
+
+404 Not Found - tokio puslapio serveryje nera!
+The server cannot find the requested resource. In the browser, this means 
+the URL is not recognized. In an API, this can also mean that the endpoint 
+is valid but the resource itself does not exist. Servers may also send this response 
+instead of 403 Forbidden to hide the existence of a resource from an unauthorized client. 
+This response code is probably the most well known due to its frequent occurrence on the web.
+
+405 Method Not Allowed -> naudojamas netinkamas metodas puslapiui prieiti!
+PVZ., su Bootstrap, form and href lin'u!
+
+The request method is known by the server but is not supported by the target resource. 
+For example, an API may not allow calling DELETE to remove a resource.
+
+418 I'm a teapot -> per daug norima gauti informacijos vienu metu, t.p. taip aptinkami robotai!
+The server refuses the attempt to brew coffee with a teapot.
+
+The server refuses the attempt to brew coffee with a teapot.
+
+PVZ., Google TeaPot:
 https://www.google.com/teapot
 
-WEB mechanika (brackground edition):
-https://docs.google.com/document/d/1nzfcVxpgmmS6ZguZoHyCqehTFlNy7GqXGqdANzWxKUo/edit
 
+Issiusti per header status code:
+https://www.php.net/manual/en/function.http-response-code.php
+
+Issiusti per header 418 status code:
+https://stackoverflow.com/questions/14823839/send-http-418-im-a-teapot
+
+
+MAZIAU ZINOMI:
+
+409 Conflict -> jei kazkas netinka!
+This response is sent when a request conflicts with the current state of the server.
+
+410 Gone -> pasenes, versija netinka!
+This response is sent when the requested content has been permanently deleted from server, 
+with no forwarding address. Clients are expected to remove their caches and links to 
+the resource. The HTTP specification intends this status code to be used for "limited-time, 
+promotional services". APIs should not feel compelled to indicate resources that have been 
+deleted with this status code.
+
+413 Payload Too Large -> per daug siunciat, kai pasakyta bodis yra 1kb o siuncia 5kb!
+Request entity is larger than limits defined by server. The server might close the connection
+or return an Retry-After header field.
+
+414 URI Too Long - url too long!
+The URI requested by the client is longer than the server is willing to interpret.
+
+415 Unsupported Media Type
+The media format of the requested data is not supported by the server, 
+so the server is rejecting the request.
+
+
+500s Server error responses:
+(mums idomi, tik 500, kada yra musu klaida!)
+
+500 Internal Server Error -> Rodo, kad serveryje viskas gerai, bet su PHP turi klaidu!
+The server has encountered a situation it does not know how to handle.
+
+502 Bad Gateway -> serveryje yra klaidu!
+This error response means that the server, while working as a gateway to get 
+a response needed to handle the request, got an invalid response.
+
+503 Service Unavailable -> serveryje yra klaidu!
+The server is not ready to handle the request. 
+Common causes are a server that is down for maintenance or that is overloaded. 
+Note that together with this response, a user-friendly page explaining 
+the problem should be sent. This response should be used for temporary conditions 
+and the Retry-After HTTP header should, if possible, contain the estimated time 
+before the recovery of the service. The webmaster must also take care about 
+the caching-related headers that are sent along with this response, 
+as these temporary condition responses should usually not be cached.
+
+504 Gateway Timeout -> serveryje yra klaidu!
+This error response is given when the server is acting as a gateway and cannot 
+get a response in time.
+
+
+
+Kaip PHP zinoti, kokiu metodu i ju buvo kreiptasi: GET ar POST?
+
+PHP jau turi pagamintus masyvus, kuriu yra 3 - 4 naudotitini:
+
+
+Masyvas Nr. 1:
+
+<?php
+cho 'pre';
+print_($_SERVER);
+?>
+
+Mums ydomu, tik: PVZ., ---> [REQUEST METHOD] => GET
+
+<?php
+cho 'pre';
+print_($_SERVER[REQUEST_METHOD]);
+?>
+
+Post nesasi dupmenis bodyje
+Get negali nestis duomenu bodyje,bet uztat paildomai gali nesti duomenis:
 
 Pvz:
 
 https://www.google.com/search?q=karve
 https://www.google.com/search?q=briedis
 https://www.google.com/search?q=briedis&start=10
+
+search?q -> query -> yra url patikslinimas
+
+kintamasis + ? 
+
+dar papildomas resultas, pvz., &start=10
+
+REVIEW VIDEOR 2.05min
+
