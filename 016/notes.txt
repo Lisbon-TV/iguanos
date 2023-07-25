@@ -45,19 +45,39 @@ The PATCH method applies partial modifications to a resource.
 ----> HTML turi tik post ir get methodus!
 
 
-COOCKIES: 
 
-path: instpect/Application/Cockies
-path: instpect/Network/Doc/Headers/Headers Responses/Cckie
+COOKIES: 
+
+sesion
+
+path: instpect/Application/Cokies
+path: instpect/Network/Doc/Headers/Headers Responses/Cookie
+XAMPP path: C:\xampp\tmp
     
 
 - mazas info gabaliukas saugomas narsykleje, skirtingose narsyklese bus skirtingas!
-- cockies turi varda ir reiksme
-- cockies atsirado pries local storage, jis guli narsykleje arba kompe.
-- tam, kad cockies atsirastu narsykleje, serveris turi juos sukurti ir liepia narsyklei 
+- cookies faile rasomi header'io virsuje pries bet koki echo..
+- cookies turi varda ir reiksme
+- cookies atsirado pries local storage, jis guli narsykleje arba kompe.
+- tam, kad cookies atsirastu narsykleje, serveris turi juos sukurti ir liepia narsyklei 
   juos issaugoti. Todel serveris gali pasideti informacijos gabaliuka narsykleje, nes 
   ju niekam kitam nerodo!
-- cockies grieztai priristi prie domeno vardo, t.i., prie kiekvieno domeno yra kukio vardas!
+- cookies grieztai priristi prie domeno vardo, t.i., prie kiekvieno domeno yra kukio vardas!
+- cookies negali buti deleted by the server, tam serveris gali setcookie to the past date!
+- jei serveris pats istrina pas save coockie, niekas tos info nebemato ir it becomes useless!
+
+Identifikacija  -   id'ed kaip 'black zuikis', - tas vadinasi taip, bet nepasako, kas is tikruju!
+                    Musu pvz. bus kompas 'black zuikis', kur jis buvo! Taip padeda surinkti 
+                    daug info!
+Autentifikacija -   pasako, kas esi. PVZ., smart ID! 
+Autorizacija -
+
+Per cookies vaiksto admin.. 
+
+Tuscias sesijos masyvas:
+$_SESSION[''] = 'Animal added';
+(msg s12:Animal added'; -> stringas 12-os ilgio);
+
 
 
 
