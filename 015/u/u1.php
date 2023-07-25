@@ -16,3 +16,5 @@ $color = isset($_GET['color']) && $_GET['color'] == 1 ? 'crimson' : 'black';
     
 </body>
 </html>
+
+<!-- rasom vieneta, tik vienai, arba kitai spalvai! -->
