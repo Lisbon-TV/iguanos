@@ -21,3 +21,4 @@ $color = isset($_GET['color']) ? $_GET['color'] : 'black';
 </html>
 
 <!-- cia: nebereikia #! -->
+<!-- ln15 pridedadam: method='get'-->

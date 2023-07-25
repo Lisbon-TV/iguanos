@@ -5,6 +5,7 @@ if (file_exists(__DIR__ . '/animals.json')) {
 }
 
 // post 
+// sleep(3);
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     if ($_GET['action'] == 'delete') {
@@ -30,6 +31,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
 
 // get
+
+// header('Location: http://localhost/iguanos/015/'); -> rederection!
+// uniqid() -> php random funkcija, except not 100% random, bet naudojam mokymo tikslais!
+// sleep(3); -> suletina 3sec, view: inspect/network/doc
+
 ?>
 
 <!DOCTYPE html>
@@ -66,3 +72,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     </fieldset>
 </body>
 </html>
+
+
+

@@ -13,3 +13,7 @@ https://stackoverflow.com/questions/298503/how-can-you-check-for-a-hash-in-a-url
 
 Free PHP webhost:
 https://www.000webhost.com/
+
+HTML: Delete / Crreate:
+    ->  ?action=delete .. + .. &id=<?= $animal['id'] ?
+    ->  ?action=create //--> 
