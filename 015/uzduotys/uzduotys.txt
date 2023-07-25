@@ -59,7 +59,7 @@ o kiek).
 Pakartokite 9 uždavinį. Padarykite taip, kad atsirastų du skaičiai. Vienas rodytų kiek buvo 
 pažymėta, o kitas kiek iš vis buvo jų sugeneruota.
 
-
+***
 
 11. papildomas
 Suprogramuokite žaidimą. Žaidimas prasideda dviem laukeliais, kuriuose žaidėjai įveda savo 
