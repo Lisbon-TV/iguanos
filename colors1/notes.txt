@@ -1,0 +1,5 @@
+
+Funkcija Printf:
+https://www.php.net/manual/en/function.printf.php
+
+
