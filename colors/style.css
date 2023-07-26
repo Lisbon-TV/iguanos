@@ -1,36 +1,45 @@
-ul {
+body {
     margin: 0;
-    padding: 0;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
+    font-family: monospace;
 }
 
-ul li {
+nav {
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    height: 100px;
+    box-sizing: border-box;
+}
+
+nav ul {
     list-style: none;
-    padding: 20px;
-    border: 3px dotted #ccc;
-    width: 350px;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    gap: 20px;
+
 }
 
-fieldset {
-    margin: 10px;
-    padding: 10px;
-    border: 1px solid #ccc;
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 30px;
 }
 
-fieldset.edit {
-    display: none;
+nav ul li a:hover {
+    color: #ccc;
 }
 
-input[type="checkbox"]:checked + fieldset.edit {
-    display: block;
+.home {
+    width: 100%;
+    height: calc(100vh - 100px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.message {
-    color: skyblue;
-    font-weight: bold;
-    padding: 10px;
-    margin: 20px;
-    border: 1px solid skyblue;
+.home h1 {
+    font-size: 100px;
+    color: #000;
+    text-align: center;
 }

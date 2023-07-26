@@ -5,7 +5,7 @@ require __DIR__ . '/top.php';
 ?>
 <?php require __DIR__ . '/menu.php' ?>
 <div class="home">
-    <h1>Welcome to Colors House!</h1>
+    <h1>Welcome to the House of Colors!</h1>
 </div>
 
 <?php

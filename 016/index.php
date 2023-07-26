@@ -41,7 +41,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     }
 
     file_put_contents(__DIR__ . '/animals.json', json_encode($animals));
-    header('Location: http://localhost/iguanos/015/');
+    header('Location: http://localhost/iguanos/016/');
     die;
 }
 
@@ -54,7 +54,7 @@ unset($_SESSION['msg']);
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="http://localhost/iguanos/015/style.css">
+    <link rel="stylesheet" href="http://localhost/iguanos/016/style.css">
     <title>ZOO</title>
 </head>
 <body>
@@ -69,14 +69,16 @@ unset($_SESSION['msg']);
             <?php foreach ($animals as $animal): ?>
                 <li>
                     <h2><?= $animal['name'] ?></h2>
-                    <form action="http://localhost/iguanos/015/?action=delete&id=<?= $animal['id'] ?>" method="post">
+                    <form action="http://localhost/iguanos/016
+                /?action=delete&id=<?= $animal['id'] ?>" method="post">
                         <button type="submit">Delete</button>
                     </form>
                     <span>edit</span>
                     <input type="checkbox" name="edit">
                     <fieldset class="edit">
                         <legend>Edit animal</legend>
-                            <form action="http://localhost/iguanos/015/?action=edit&id=<?= $animal['id'] ?>" method="post">
+                            <form action="http://localhost/iguanos/016
+                        /?action=edit&id=<?= $animal['id'] ?>" method="post">
                                 <input type="text" name="name" value="<?= $animal['name'] ?>">
                                 <button type="submit">save</button>
                             </form>
@@ -91,7 +93,8 @@ unset($_SESSION['msg']);
     </ul>
     <fieldset>
         <legend>Add animal</legend>
-        <form action="http://localhost/iguanos/015/?action=create" method="post">
+        <form action="http://localhost/iguanos/016
+    /?action=create" method="post">
             <input type="text" name="name">
             <button type="submit">Add</button>
         </form>
