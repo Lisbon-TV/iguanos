@@ -1,13 +1,5 @@
 <?php
 require __DIR__ . '/bootstrap.php';
-if (!isset($_SESSION['login']) || $_SESSION['login'] != 1) {
-    $_SESSION['message'] = [
-        'text' => 'Please login first!',
-        'type' => 'crimson'
-    ];
-    header('Location: ' . URL . 'login.php');
-    die;
-}
 $title = 'Colors - Colors list';
 require __DIR__ . '/top.php';
 ?>
@@ -20,12 +12,10 @@ require __DIR__ . '/top.php';
     <div class="colors-list">
     <?php foreach ($colors as $color) : ?>
         <div class="color-bin">
-            <h6><?= $color['name'] ?></h6>
             <div class="color" style="background-color: <?= $color['hex'] ?>">
-                <?= $color['title'] ?? 'no title' ?>
+                <?= $color['name'] ?>
             </div>
             <a class="red" href="<?= URL ?>delete.php?id=<?= $color['id'] ?>">Delete</a>
-            <a class="green" href="<?= URL ?>edit.php?id=<?= $color['id'] ?>">Edit</a>
         </div>
     <?php endforeach ?>
     </div>
