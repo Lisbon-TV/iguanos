@@ -1,0 +1,17 @@
+PHP Standards Recommendations - PHP-FIG:
+https://www.php-fig.org/psr/
+
+Privalomas taisykliu laikymas!
+
+
+
+Faile gali buti tik viena klase, kuri prasideda is didziosios raides
+ir turi tureti faila kurio pavadinimas sutampa su klases vardu!
+
+
+PSR-4: Autoloader:
+https://www.php-fig.org/psr/psr-4/
+
+Magic Methods:
+https://www.php.net/manual/en/language.oop5.magic.php
+
