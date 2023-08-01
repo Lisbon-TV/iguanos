@@ -12,7 +12,7 @@ function readDataFromJson()
 
 function saveDataToJson($data)
 {
-    $file = '/Applications/XAMPP/xamppfiles/htdocs/PHP/u2/data/accounts.json';
+    $file = '/Applications/XAMPP/xamppfiles/htdocs/PHP/BankasU2/data/accounts.json';
   // Konvertuojame masyvą į JSON formatą
   $jsonData = json_encode($data, JSON_PRETTY_PRINT);
   // Įrašome JSON duomenis į failą

@@ -1,0 +1,4 @@
+PHP DESIGN PATTERNS:
+https://refactoring.guru/design-patterns/php
+
+See: exc. Cart.php.
