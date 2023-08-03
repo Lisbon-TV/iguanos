@@ -32,7 +32,7 @@ if('POST' == $_SERVER['REQUEST_METHOD']){
 
 
     file_put_contents(__DIR__ . '/data.json', json_encode($sarasas));
-    // print_r($norimaSuma);
+    // cia: print_r($norimaSuma);
 
     header("Location: http://localhost/iguanos/bank/list.php");
      die;
@@ -69,12 +69,12 @@ if('POST' == $_SERVER['REQUEST_METHOD']){
         <?php endforeach ?>
     </div>
 
-    <div>
+    <div style="color: white">
         <form method="post">
             Amount:
             <input type="number" name="likutis" required>
 
-            <button type="submit">Debit</button>
+            <button type="submit">Credit</button>
         </form>
     </div>
 </body>

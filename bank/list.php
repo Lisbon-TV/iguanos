@@ -26,9 +26,9 @@
         <li><?= $name ?></li>
          
     <?php endforeach ?>
-        <a style="border: 2px black; color: white; text-decoration: none; background-color: black" href="http://localhost/iguanos/bank/debitAccount.php?index=<?= $indexas ?>">Credit</a>
-        <a style="border: 2px black; color: white; text-decoration: none; background-color: black" href="http://localhost/iguanos/bank/creditAccount.php?index=<?= $indexas ?>">Debit</a>
-        <a style="border: 2px black solid; color: white; text-decoration: none; background-color: crimson" href="http://localhost/iguanos/bank/deleteAccount.php?index=<?= $indexas ?>">Delete account</a>
+        <a style="font-size: 13px; border-radius: 5px; border: 2px black; color: white; text-decoration: none; background-color: black" href="http://localhost/iguanos/bank/debitAccount.php?index=<?= $indexas ?>">Debit</a>
+        <a style="font-size: 13px; border-radius: 5px; border: 2px black; color: white; text-decoration: none; background-color: black" href="http://localhost/iguanos/bank/creditAccount.php?index=<?= $indexas ?>">Credit</a>
+        <a style="font-size: 13px; border-radius: 5px; border: 2px black solid; color: white; text-decoration: none; background-color: crimson" href="http://localhost/iguanos/bank/deleteAccount.php?index=<?= $indexas ?>">Delete account</a>
     </div>
     <?php endforeach ?>
 

@@ -32,7 +32,7 @@ if (isset($_GET)) {
 
 <body style="background-color: grey">
     <?php include 'header.php' ?>
-    <a href="http://localhost/iguanos/bank/list.php">Go back</a>
+    <a href="http://localhost/iguanos/bank/list.php">Back to account list</a>
 </body>
 
 </html>

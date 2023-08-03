@@ -62,12 +62,12 @@ if('POST' == $_SERVER['REQUEST_METHOD']){
     <?php endforeach ?>
     </div>
 
-    <div>
+    <div style="color: white">
     <form  method="post">
         Amount:
     <input type="number" name="likutis" required>
        
-    <button type="submit">Credit</button>
+    <button type="submit">Debit</button>
     </form>
     </div>
 </body>

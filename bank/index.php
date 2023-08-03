@@ -38,7 +38,7 @@ if('POST' == $_SERVER['REQUEST_METHOD'] ){
         }
 
     } 
-        $erroras='Wrong credentials!';  
+        $erroras='Wrong credentials: Names cannot be less than 3 letters!';  
 }
 ?>
 
@@ -54,7 +54,7 @@ if('POST' == $_SERVER['REQUEST_METHOD'] ){
 
 <body style="background-color: grey">
     <?php include   'header.php' ?>
-    <div style="display: flex; flex-direction: column; flex-wrap: wrap; height: 30px">
+    <div style="display: flex; flex-wrap: wrap; height: 30px">
         <form action="http://localhost/iguanos/bank/index.php" method="post">
             Name:<input type="text" name="vardas" required>
             Surname:<input type="text" name="pavarde" required>
@@ -65,7 +65,7 @@ if('POST' == $_SERVER['REQUEST_METHOD'] ){
             <button type="submit">Create new account</button>
         </form>
     </div>
-    <div style="background: blue">
+    <div style="background: red; color: white">
         <h3><?= $erroras ?></h3>
     </div>
 </body>
