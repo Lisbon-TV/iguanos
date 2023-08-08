@@ -1,0 +1,29 @@
+
+C:\xampp\apache\conf\extra\httpd-vhosts.conf
+
+VirtualHost *:80>
+    ServerAdmin webmaster@admin.com
+    DocumentRoot "C:/xampp/htdocs/"
+    ServerName localhost
+    ErrorLog "logs/error.log"
+    CustomLog "logs/access.log" common
+</VirtualHost>
+
+<VirtualHost *:80>
+    ServerAdmin briedis@gmail.test
+    DocumentRoot "C:/xampp/htdocs/iguanos/donuts/public/"
+    ServerName donuts.test
+    ErrorLog "logs/error.log"
+    CustomLog "logs/access.log" common
+</VirtualHost>
+
+C:\Windows\System32\drivers\etc\hosts
+
+rc2.test -> hange to: 127.0.0.1   donuts.test
+then: save as admin
+
+Then stop Xampp Apache and start again!
+
+Kuriant aplikacija, "Echo" galima tik pabaigoje, nes tada turime galimybe sukurti headeri!
+
+

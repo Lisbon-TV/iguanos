@@ -1,0 +1,71 @@
+
+C:\xampp\apache\conf\extra\httpd-vhosts.conf
+
+VirtualHost *:80>
+    ServerAdmin webmaster@admin.com
+    DocumentRoot "C:/xampp/htdocs/"
+    ServerName localhost
+    ErrorLog "logs/error.log"
+    CustomLog "logs/access.log" common
+</VirtualHost>
+
+<VirtualHost *:80>
+    ServerAdmin briedis@gmail.test
+    DocumentRoot "C:/xampp/htdocs/iguanos/donuts/public/"
+    ServerName donuts.test
+    ErrorLog "logs/error.log"
+    CustomLog "logs/access.log" common
+</VirtualHost>
+
+C:\Windows\System32\drivers\etc\hosts
+
+rc2.test -> hange to: 127.0.0.1   donuts.test
+then: save as admin
+
+Then stop Xampp Apache and start again!
+
+Kuriant aplikacija, "Echo" galima tik pabaigoje, nes tada turime galimybe sukurti headeri!
+
+
+MVC architektura:
+    - modelis
+    - view
+    - kontroleris
+
+Info perduoti i serveri galima per Query, Post, ir dabar parametru.
+
+Kontroleris negeneruoja HTML
+View generuoja HTML per:
+    - ex.     Webpack, kuris veikia ant Js.
+    - web:    https://webpack.js.org/
+    - webpack wrap -> padeda pasilengvinti, 
+                -   pvz. Larevel Mix
+                -   web. https://laravel-mix.com/
+
+
+
+Laravel Mix:
+
+Terminale: 
+    - mkdir my-app && cd my-app
+    - npm init -y
+    - npm install laravel-mix --save-dev
+
+To compile:     
+    - cd donuts
+    - npx mix
+    Pirmas run nepasiseks, nes reikalaus sass. 
+
+Daugiau vendors folderio (css failo!) nelieciame!
+
+Terminale 
+    - npx watch
+    vietoj to, galima keisti package json faile:
+        "start": "mix watch"
+    SEE: json-npx-watch.jpg!
+
+
+
+
+
+
