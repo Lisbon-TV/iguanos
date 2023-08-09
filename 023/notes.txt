@@ -1,0 +1,11 @@
+psr-4 autoloader
+
+Terminale:
+    - cd 24
+    - composer init
+
+    - descriptiom: Bebras Garden
+    - Would you like to define your dependencies (require) interactively [yes]? -> enter: no 
+    - Would you like to define your dependencies (require-dev`) interactively [yes]? -> enter: no
+    - toda skip -> enter
+    - to confirm? -> y

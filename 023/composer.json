@@ -1,0 +1,16 @@
+{
+    "name": "viktor/023",
+    "description": "Bebras Garden",
+    "autoload": {
+        "psr-4": {
+            "Viktor\\023\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Lisbon",
+            "email": "lisbon@dublin.com"
+        }
+    ],
+    "require": {}
+}

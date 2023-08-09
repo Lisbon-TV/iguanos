@@ -1,4 +1,15 @@
 
+Composer:
+    To check:
+    system: environment/variables/path - turi buti composer yrasytas
+
+Faile: composer.json 
+       
+        ln6: "Viktor\\023\\": "src/"
+        - update to:
+
+
+
 C:\xampp\apache\conf\extra\httpd-vhosts.conf
 
 VirtualHost *:80>
