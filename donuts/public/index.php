@@ -1,9 +1,11 @@
 <?php
 use Donuts\App;
 
+
+define('ROOT', __DIR__ . '/../');
+define('URL', 'http://donuts.test/');
+
 require_once '../vendor/autoload.php';
 
-echo '<h1>Hi from index.php</h1>';
 
-
-App::start();
+echo App::start();

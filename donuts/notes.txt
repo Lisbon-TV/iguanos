@@ -65,7 +65,17 @@ Terminale
     SEE: json-npx-watch.jpg!
 
 
+Buffering:
+https://www.php.net/manual/en/function.ob-start.php
+
+PHP extract function
+https://www.php.net/manual/en/function.extract.php
 
 
+    Download bootstrap  
+        - cd donuts
+        - npm install bootstrap
+        tada: resources/app.scss type: @import 'bootstrap/scss/bootstrap';
 
-
+        Uzbaigiant darba:
+        - npx mix build -> suspaus app.scss faila resource folderyje!
