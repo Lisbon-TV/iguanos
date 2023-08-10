@@ -1,0 +1,59 @@
+#U3 Bankas PHP V.2
+Objektinio PHP banko aplikacijos versija
+
+
+Papildomi reikalavimai (visa kita kaip U2):
+
+1.
+Visas kodas parašytas objektiniu stiliumi;
+
+2.
+Naudoti Composer ir PSR-4 klasėm įkelti;
+
+3.
+Naudoti namespace;
+
+4.
+Įgyvendinti Front (įėjimas tik per duris) architektūrą;
+
+5.
+Failų struktūra folderiai:
+ - App (aplikacijos darbiniai failai),
+ - public (iš naršyklės apasiekiami failai),
+ - vendor (composer bibliotekos),
+ - views (html templeitai);
+
+6.
+Duomenų bazės klasė turi implimentinti interfeisą;
+
+7.
+Padarykite “seeder” failą pradiniams testiniams duomenims įkelti.
+
+
+****
+
+
+Interfeiso failas. Faile nieko keisti negalima:
+
+<?php
+namespace App\DB;
+
+
+interface DataBase
+{
+    function create(array $userData) : void;
+
+
+    function update(int $userId, array $userData) : void;
+
+
+    function delete(int $userId) : void;
+
+
+    function show(int $userId) : array;
+    
+    function showAll() : array;
+}
+
+
+

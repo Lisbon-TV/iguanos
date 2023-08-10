@@ -1,3 +1,7 @@
+Composer:
+    To check:
+    System properties: environment/user environment variables/path/ (edit/arba: new) - turi buti composer yrasytas
+
 psr-4 autoloader
 
 Terminale:
@@ -9,3 +13,8 @@ Terminale:
     - Would you like to define your dependencies (require-dev`) interactively [yes]? -> enter: no
     - toda skip -> enter
     - to confirm? -> y
+
+    Faile: composer.json 
+       
+        ln6: "Viktor\\023\\": "src/"
+        - update to:

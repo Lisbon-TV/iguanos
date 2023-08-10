@@ -1,12 +1,5 @@
 
-Composer:
-    To check:
-    system: environment/variables/path - turi buti composer yrasytas
 
-Faile: composer.json 
-       
-        ln6: "Viktor\\023\\": "src/"
-        - update to:
 
 
 
@@ -90,3 +83,9 @@ https://www.php.net/manual/en/function.extract.php
 
         Uzbaigiant darba:
         - npx mix build -> suspaus app.scss faila resource folderyje!
+
+
+        024:
+
+        Interface sulygina isejimus ir reikalingas tik vienas controleris,
+        Nebereikia atskiru controleriu API, dabase failui, ar serveriui, etc. 
